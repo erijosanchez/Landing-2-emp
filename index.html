@@ -409,6 +409,21 @@
 
 	</div>
 
+	<script>
+		window.addEventListener("scroll", function () {
+			let navbar = document.getElementById("nav");
+
+			if (window.scrollY > 50) {
+				if (!navbar.classList.contains("nav-scroll")) {
+					navbar.classList.add("nav-scroll");
+				}
+			} else {
+				navbar.classList.remove("nav-scroll");
+			}
+		});
+
+	</script>
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
