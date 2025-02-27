@@ -215,3 +215,18 @@
 		});
 
 })(jQuery);
+
+
+//Función para el evento del scroll y nav en modo rebote
+
+window.addEventListener("scroll", function () {
+	let navbar = document.getElementById("nav");
+
+	if (window.scrollY > 20) {
+		if (!navbar.classList.contains("nav-scroll")) {
+			navbar.classList.add("nav-scroll");
+		}
+	} else {
+		navbar.classList.remove("nav-scroll");
+	}
+});

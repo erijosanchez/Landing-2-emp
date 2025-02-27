@@ -2424,14 +2424,14 @@ body.homepage.is-preload #header:after {
     padding: 0.8em 0;
     background-color: rgba(245, 245, 245, 0.95); /* Leve transparencia */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombrado elegante */
-    transform: scale(1.05) translateY(-5px);
-    animation: bounceIn 0.4s ease-in-out;
+    transform: scale(1);
+    animation: bounceIn 1.2s ease-in-out;
 }
 
 /* Efecto de rebote */
 @keyframes bounceIn {
     0% {
-        transform: scale(0.9) translateY(-15px);
+        transform: scale(0.9) translateY(-10px);
         opacity: 0;
     }
     60% {
