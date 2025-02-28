@@ -260,6 +260,21 @@ main {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    justify-items: center;
+}
+
+.service-img-cont {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.service-img-cont img {
+    position: relative;
+    width: 120%;
+    height: 110%;
 }
 
 .service-card:hover {
