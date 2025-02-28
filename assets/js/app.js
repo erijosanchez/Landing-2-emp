@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navUl = document.querySelector('nav ul');
     
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 20) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');

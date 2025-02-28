@@ -13,8 +13,10 @@ MENU:
 1. Estilos generales de la web
 2. Header
    2.1 Navbar
+   2.2 Hero 
 
 3. About (NOSOTROS)
+
 
 */
 
@@ -93,6 +95,8 @@ header.scrolled {
     height: 50px;
 }
 
+/** 2.1 Navbar  */
+
 nav {
     display: flex;
     justify-content: center;
@@ -122,24 +126,49 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
+
+/** 2.2 Heron content */
 main {
     padding-top: 90px;
     /* Add padding to account for fixed header */
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('hero-background.jpg');
+    background: #cbcbcb;
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 10rem 0;
+    padding-top: 3rem;
+    display: flex;
+    overflow: hidden;
+    height: 95vh;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 9rem;
 }
+
+.hero-content-2 {
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: flex-end
+}
+
+.cont-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.cont-img img {
+    width: 500px;
+    position: relative;
+    margin-top: -5rem;
+}
+
 
 .hero h1 {
     font-size: 3rem;
@@ -163,7 +192,7 @@ main {
 
 /**N°3 Sección de nostros */
 .about {
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 .section-header {
