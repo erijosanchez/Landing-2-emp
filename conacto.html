@@ -1,11 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landing-2-Emp - Duck Dev</title>
+    <!--Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Styles-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- FAVICON .webp-->
+    <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
+    <!-- Metadatos -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <img src="img/logo/duckDevlogo.png" alt="Landing-2-emp logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html#inicio">Inicio</a></li>
+                <li><a href="/index.html#servicios">Servicios</a></li>
+                <li><a href="/index.html#nosotros">Nosotros</a></li>
+                <li><a href="/index.html#proyectos">Proyectos</a></li>
+                <li><a href="/conacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h3>DISEÑANDO UN FUTURO RESISTENTE</h3>
+                <h1>Transformando Visiones en Espacios Extraordinarios</h1>
+                <p>Vitae congue mauris rhoncus aenean vel elit scelerisque. Consequat nisl vel pretium lectus quam id
+                    leo in vitae. Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et magnis
+                    dis parturient</p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
+            </div>
+            <div class="hero-content-2">
+                <div class="cont-img">
+                    <img src="img/contenido/arqui-img1.webp" alt="arquitecto">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services">
+            <div class="section-header-1">
+                <h2>Arquitectura & Construcción</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img-cont">
+                        <img src="img/contenido/service-1.jpg" alt="Servicio 1">
+                    </div>
+                    <h3>Diseño Arquitectónico</h3>
+                    <p>Conceptualización y desarrollo de proyectos únicos</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-cont">
+                        <img src="img/contenido/service-1.jpg" alt="Servicio 1">
+                    </div>
+                    <h3>Construcción</h3>
+                    <p>Ejecución precisa de proyectos de alta complejidad</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-cont">
+                        <img src="img/contenido/service-1.jpg" alt="Servicio 1">
+                    </div>
+                    <h3>Remodelaciones</h3>
+                    <p>Transformación integral de espacios existentes</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-cont">
+                        <img src="img/contenido/service-1.jpg" alt="Servicio 1">
+                    </div>
+                    <h3>Remodelaciones</h3>
+                    <p>Transformación integral de espacios existentes</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <div class="section-header">
+                <h2>Nuestra Historia</h2>
+                <p>Más de 20 años creando espacios innovadores</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ArquitecturaPro nace de la pasión por transformar ideas en realidades construidas. Nuestro equipo
+                        multidisciplinario combina creatividad técnica con sensibilidad estética.</p>
+                </div>
+                <div class="about-images">
+                    <!-- Placeholder for architectural project images -->
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <div class="section-header">
+                <h2>Proyectos Destacados</h2>
+            </div>
+            <div class="projects-gallery">
+                <!-- Interactive project gallery will be added with JavaScript -->
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <h3>ArquitecturaPro</h3>
+                    <p>Dirección: Av. Innovación 123, Ciudad Moderna</p>
+                    <p>Teléfono: +52 (55) 1234 5678</p>
+                    <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                            data-cfemail="8ae9e5e4feebe9fee5caebf8fbffe3feefe9fefff8ebfaf8e5a4e9e5e7">[email&#160;protected]</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p> 2023 ArquitecturaPro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </body>
+
 </html>
