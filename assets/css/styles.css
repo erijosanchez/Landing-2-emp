@@ -335,7 +335,7 @@ main {
 
 /*N° Construccion */
 .construccion {
-    padding: 7rem;
+    padding: 7rem 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -352,8 +352,23 @@ main {
 
 .const-sect2 {
     flex: 1;
-    background-color: violet;
-    padding: 5rem 0;
+    padding: 1rem 0;
+}
+
+.const-sect2 h1{
+    text-align: left;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #939393fa;
+    line-height: 1;
+}
+
+.const-sect2 p {
+    text-align: left;
+    margin-left: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
 }
 
 /*Proyectos*/
