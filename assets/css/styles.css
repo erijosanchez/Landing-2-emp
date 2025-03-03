@@ -346,8 +346,7 @@ main {
 
 .const-sect1 {
     flex: 2;
-    background-color: yellow;
-    padding: 5rem 0;
+    padding-top: 1rem;
 }
 
 .const-sect2 {
@@ -365,22 +364,53 @@ main {
 }
 
 .const-sect2 p {
+    margin-top: 1rem;
     text-align: left;
     margin-left: 1rem;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.btn-const {
+    padding: 0.7rem 3rem;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-const:hover {
+    background: linear-gradient(to bottom, #2980b9, #72b1da);
+    color: #f0f0f0;
+    padding: 0.7rem 3rem;
+    border: none;
+    text-decoration: none;
 }
 
 /*Proyectos*/
 .projects {
     padding: 5rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
-.projects-gallery {
-    display: flex;
-    justify-content: space-between;
+.proyectos-vertical {
+    background-color: yellowgreen;
+    width: 90%;
+    justify-items: center;
 }
 
+.mod-1 {
+    background: yellow;
+    width: 70%;
+}
+
+.mod-2 {
+    background-color: violet;
+    width: 70%;
+}
 /*N°4 Nosotros*/
 
 .about {
