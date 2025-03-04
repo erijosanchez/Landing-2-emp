@@ -397,6 +397,13 @@ main {
     margin-left: 5rem;
 }
 
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); } /* Se mueve hacia arriba */
+    100% { transform: translateY(0); }
+
+}
+
 .cont-circulo-2{
     position: relative;
     overflow: hidden;
@@ -417,6 +424,7 @@ main {
     position: absolute;
     left: 3.5rem;
     top: 1rem;
+    animation: float 3.5s ease-in-out infinite alternate;
 }
 
 .cont-circulo .circulo-1 {
@@ -425,6 +433,7 @@ main {
     background: rgb(219, 219, 6);
     position: absolute;
     z-index: 1;
+    animation: float 3.7s ease-in-out infinite alternate;
 }
 
 .cont-circulo-2 img{
@@ -433,6 +442,7 @@ main {
     border-radius: 50%;
     position: absolute;
     z-index: 5;
+    animation: float 3.4s ease-in-out infinite alternate;
 }
 
 .cont-circulo-2 .circulo-2 {
@@ -442,6 +452,7 @@ main {
     border-radius: 50%;
     top: -3rem;
     left: -0.5rem;
+    animation: float 3.5s ease-in-out infinite alternate;
 }
 
 .cont-circulo-3 img {
@@ -450,6 +461,7 @@ main {
     height: 400px;
     position: absolute;
     z-index: 5;
+    animation: float 3.3s ease-in-out infinite alternate;
 }
 
 .cont-circulo-3 .circulo-3 {
@@ -457,6 +469,7 @@ main {
     padding: 14rem;
     border-radius: 50%;
     background: turquoise;
+    animation: float 3.5s ease-in-out infinite alternate;
 }
 
 /*Proyectos*/
