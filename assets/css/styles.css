@@ -335,7 +335,8 @@ main {
 
 /*N° Construccion */
 .construccion {
-    padding: 7rem 0;
+    padding-top: 6rem;
+    padding-bottom: 27rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -448,16 +449,33 @@ main {
     width: 400px;
     height: 400px;
     position: absolute;
+    z-index: 5;
+}
+
+.cont-circulo-3 .circulo-3 {
+    position: absolute;
+    padding: 14rem;
+    border-radius: 50%;
+    background: turquoise;
 }
 
 /*Proyectos*/
 .projects {
-    padding: 5rem;
+    padding: 6rem;
     align-items: center;
     justify-content: center;
     justify-items: center;
 }
 
+.section-header-2{
+    text-align: center;
+}
+
+.section-header-2 h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    padding-bottom: 3rem;
+}
 .proyectos-vertical {
     background-color: yellowgreen;
     width: 90%;
