@@ -347,6 +347,8 @@ main {
 .const-sect1 {
     flex: 2;
     padding-top: 1rem;
+    text-align: left;
+    align-items: left;
 }
 
 .const-sect2 {
@@ -386,6 +388,66 @@ main {
     padding: 0.7rem 3rem;
     border: none;
     text-decoration: none;
+}
+
+.cont-circulo {
+    position: relative;
+    overflow: hidden;
+    margin-left: 5rem;
+}
+
+.cont-circulo-2{
+    position: relative;
+    overflow: hidden;
+    margin-left: 30rem;
+}
+
+.cont-circulo-3 {
+    position: relative;
+    overflow: hidden;
+    top: 18rem;
+}
+
+.cont-circulo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 9;
+    position: absolute;
+    left: 3.5rem;
+    top: 1rem;
+}
+
+.cont-circulo .circulo-1 {
+    padding: 13rem;
+    border-radius: 50%;
+    background: rgb(219, 219, 6);
+    position: absolute;
+    z-index: 1;
+}
+
+.cont-circulo-2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+
+.cont-circulo-2 .circulo-2 {
+    background: violet;
+    padding: 8rem;
+    position: absolute;
+    border-radius: 50%;
+    top: -3rem;
+    left: -0.5rem;
+}
+
+.cont-circulo-3 img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    position: absolute;
 }
 
 /*Proyectos*/
