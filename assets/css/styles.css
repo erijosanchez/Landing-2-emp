@@ -481,7 +481,7 @@ main {
 }
 
 .section-header-2{
-    text-align: center;
+    text-align: right;
 }
 
 .section-header-2 h2 {
@@ -489,6 +489,7 @@ main {
     font-size: 2.2rem;
     padding-bottom: 3rem;
 }
+
 .proyectos-vertical {
     background-color: yellowgreen;
     width: 90%;
