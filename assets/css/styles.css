@@ -486,38 +486,41 @@ main {
 
 .section-header-2 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding-bottom: 3rem;
+    text-shadow:  3px 3px 0px #cacacab0;
+
 }
 
 .contedor-pv-2 {
-    background: #477fa492;
+    background: #477fa4c6;
     width: 100%;
-    padding: 4rem 0;
+    padding: 8rem 0;
     justify-items: center;
 }
 
 .proyectos-vertical {
-    width: 80%;
+    width: 75%;
     background: #f4f6f7;
     padding: 5rem 0;
+    border-radius: 2px;
     justify-items: center;
 }
 
 .mod-1 {
-    background: yellow;
+    background: #477fa4e7;
     width: 78%;
     margin-left: 4rem;
 }
 
 .mod-2 {
-    background-color: violet;
+    background-color: #72b1da;
     width: 76%;
     margin-right: 5rem;
 }
 
 .mod-3 {
-    background-color: yellow;
+    background-color: #477fa4e7;
     width: 70%;
     margin-left: 7rem;
 }
@@ -529,7 +532,7 @@ main {
 }
 
 .mod-5 {
-    background-color: yellow;
+    background-color: #477fa4e7;
     width: 71%;
     margin-left: 2rem;
 }
@@ -577,8 +580,13 @@ main {
 footer {
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
+    display: flex;
     padding: 2rem;
+}
+
+footer p {
+    text-align: right !important;
+    width: 90%;
 }
 
 .social-links a {
