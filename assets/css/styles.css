@@ -474,7 +474,7 @@ main {
 
 /*Proyectos*/
 .projects {
-    padding: 6rem;
+    padding: 6rem 0;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -490,21 +490,59 @@ main {
     padding-bottom: 3rem;
 }
 
+.contedor-pv-2 {
+    background: #477fa492;
+    width: 100%;
+    padding: 4rem 0;
+    justify-items: center;
+}
+
 .proyectos-vertical {
-    background-color: yellowgreen;
-    width: 90%;
+    width: 80%;
+    background: #f4f6f7;
+    padding: 5rem 0;
     justify-items: center;
 }
 
 .mod-1 {
     background: yellow;
-    width: 70%;
+    width: 78%;
+    margin-left: 4rem;
 }
 
 .mod-2 {
     background-color: violet;
-    width: 70%;
+    width: 76%;
+    margin-right: 5rem;
 }
+
+.mod-3 {
+    background-color: yellow;
+    width: 70%;
+    margin-left: 7rem;
+}
+
+.mod-4 {
+    background-color: violet;
+    width: 73%;
+    margin-right: 2rem;
+}
+
+.mod-5 {
+    background-color: yellow;
+    width: 71%;
+    margin-left: 2rem;
+}
+
+.mod-6 {
+    background-color: violet;
+    width: 85%;
+}
+
+.mod-1, .mod-2, .mod-3, .mod-4, .mod-5, .mod-6 {
+    padding: 2rem;
+}
+
 /*N°4 Nosotros*/
 
 .about {
