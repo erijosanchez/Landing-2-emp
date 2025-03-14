@@ -34,6 +34,16 @@ MENU:
     --accent-color: #3498db;
     --text-color: #333;
     --background-color: #f4f6f7;
+    --color-primary: #2c3e50;
+    --color-secondary: #34495e;
+    --color-accent: #3498db;
+    --color-light: #ecf0f1;
+    --color-dark: #2c3e50;
+    --color-text: #333333;
+    --color-text-light: #ffffff;
+    --shadow-soft: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --transition-standard: all 0.3s ease;
 }
 
 * {
@@ -340,7 +350,7 @@ main {
 /*N° Construccion */
 .construccion {
     padding-top: 6rem;
-    padding-bottom: 27rem;
+    padding-bottom: 32rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -485,187 +495,270 @@ main {
     animation: float 3.5s ease-in-out infinite alternate;
 }
 
-/*Proyectos*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROYECTOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Estilos generales de la sección */
 .projects {
-    padding: 6rem 0 0 0;
+    padding: 5rem 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+    background: linear-gradient(180deg, #5e8cd2 0%, #e4e7eb 100%);
 }
 
 .section-header-2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .section-header-2 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-    color: #333;
-    padding-bottom: 1rem;
+    font-size: 2.7rem;
+    font-weight: 600;
+    color: #f0f0f0;
+    text-shadow: 3px 3px 0px #232323b0;
+    margin-bottom: 1rem;
     position: relative;
-    text-shadow: 3px 3px 0px rgba(202, 202, 202, 0.7);
+    display: inline-block;
 }
 
 .section-header-2 h2:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 160px;
     height: 3px;
-    background-color: #477fa4;
+    background-color: #232323b0;
 }
 
-.contedor-pv-2 {
-    background: linear-gradient(180deg, #72b1da 0%, #477fa4 100%);
+.section-description {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+/* Contenedor principal de proyectos */
+.contenedor-proyectos {
     width: 100%;
-    padding: 5rem 0;
+    padding: 1rem 0 6rem;
     display: flex;
     justify-content: center;
-    perspective: 1500px;
-}
-
-.proyectos-vertical {
-    width: 95%;
-    max-width: 1300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    transform-style: preserve-3d;
-    transform: rotateX(5deg);
 }
 
 .edificio-container {
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-    transform-style: preserve-3d;
+    position: relative;
 }
 
+/* Estilos para cada piso del edificio */
 .piso {
-    width: 90%;
-    padding: 2rem;
-    margin: 0.5rem 0;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-standard);
+    overflow: hidden;
     position: relative;
 }
 
 .piso:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-medium);
 }
 
-/* Terrazas y pisos con formas especiales */
+/* Distribución de anchos para crear efecto apilado */
 .terraza {
-    width: 50%;
-    background-color: #a8d8ea;
-    border-radius: 8px 8px 4px 4px;
-    transform: translateZ(20px);
+    width: 65%;
+    border-top: 4px solid var(--color-accent);
 }
 
 .piso-1 {
-    width: 65%;
-    background-color: #477fa4;
-    transform: translateZ(15px);
+    width: 75%;
 }
 
 .piso-2 {
-    width: 75%;
-    background-color: #72b1da;
-    transform: translateZ(10px);
+    width: 85%;
 }
 
 .piso-3 {
-    width: 85%;
-    background-color: #477fa4;
-    transform: translateZ(5px);
-}
-
-.piso-4 {
-    width: 80%;
-    background-color: #72b1da;
+    width: 78%;
 }
 
 .planta-baja {
     width: 90%;
-    background-color: #30638e;
-    border-radius: 4px 4px 0 0;
-    padding-bottom: 3rem;
 }
 
 /* Contenido de cada proyecto */
 .proyecto-contenido {
-    color: white;
+    display: flex;
+    padding: 2rem;
 }
 
-.proyecto-contenido h3 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+.proyecto-info {
+    flex: 1;
+}
+
+.proyecto-categoria {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-accent);
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.proyecto-contenido p {
+.proyecto-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    color: var(--color-dark);
+}
+
+.proyecto-info p {
     font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 1rem;
-    opacity: 0.9;
+}
+
+.proyecto-detalles {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyecto-detalles li {
+    margin-right: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.proyecto-detalles li:before {
+    content: "•";
+    color: var(--color-accent);
+    margin-right: 0.5rem;
+}
+
+.proyecto-accion {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 2rem;
 }
 
 .btn-proyecto {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-light);
+    color: var(--color-dark);
     text-decoration: none;
-    border-radius: 3px;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-standard);
+    border: 1px solid #e0e0e0;
 }
 
 .btn-proyecto:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+.btn-proyecto .flecha {
+    transition: transform 0.2s ease;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.btn-proyecto:hover .flecha {
     transform: translateX(5px);
 }
 
-/* Elementos decorativos para simular ventanas */
+/* Botón para ver todos los proyectos */
+.ver-todos-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn-ver-todos {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: var(--transition-standard);
+}
+
+.btn-ver-todos:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-3px);
+}
+
+/* Estilo visual para simular las ventanas del edificio (sutil) */
 .piso::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 8px;
     height: 100%;
-    background-image: repeating-linear-gradient(90deg,
-            transparent,
-            transparent 15px,
-            rgba(255, 255, 255, 0.05) 15px,
-            rgba(255, 255, 255, 0.05) 30px);
-    pointer-events: none;
-    opacity: 0.5;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.terraza::before {
+    background-color: var(--color-accent);
+    opacity: 0.2;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .proyectos-vertical {
-        width: 95%;
-        transform: none;
-    }
+@media (max-width: 992px) {
 
     .terraza,
     .piso-1,
     .piso-2,
     .piso-3,
-    .piso-4,
     .planta-baja {
-        width: 90%;
-        transform: none;
+        width: 95%;
     }
 
-    .proyecto-contenido h3 {
-        font-size: 1.2rem;
+    .proyecto-contenido {
+        flex-direction: column;
+    }
+
+    .proyecto-accion {
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header-2 h2 {
+        font-size: 2rem;
+    }
+
+    .proyecto-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .proyecto-detalles {
+        flex-direction: column;
+    }
+
+    .proyecto-detalles li {
+        margin-bottom: 0.5rem;
     }
 }
 
