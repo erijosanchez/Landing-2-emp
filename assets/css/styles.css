@@ -240,17 +240,21 @@ main {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 12px 24px;
+    color: #2c3e50;
+    padding: 5px 24px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 1px;
+    font-size: 1.2rem;
     margin-top: 20px;
+    border-left: 1px solid #2c3e50;
+    border-right: 1px solid #2c3e50;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #2980b9;
+    background: linear-gradient(to right, #1e5799, #3498db);
+    border: none;
+    color: var(--color-light);
 }
 
 /**N°3 Servicios */
