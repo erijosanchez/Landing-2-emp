@@ -1,0 +1,110 @@
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .circle-container:nth-child(1) {
+        left: 2%;
+    }
+
+    .circle-container:nth-child(2) {
+        left: 50%;
+    }
+
+    .circle-container:nth-child(3) {
+        left: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .const-cont {
+        flex-direction: column-reverse;
+        padding: 0 2rem;
+    }
+
+    .const-sect1 {
+        height: 600px;
+    }
+
+    .const-sect2 {
+        padding: 3rem 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .const-sect2 h1,
+    .const-sect2 p {
+        text-align: center;
+    }
+
+    .const-sect2 h1 {
+        font-size: 2.8rem;
+    }
+
+    .btn-const {
+        align-self: center;
+    }
+
+    .circle-container:nth-child(1) {
+        left: 10%;
+        top: 5%;
+    }
+
+    .circle-container:nth-child(2) {
+        left: 60%;
+        top: 18%;
+    }
+
+    .circle-container:nth-child(3) {
+        left: 30%;
+        top: 45%;
+    }
+
+    .circle-container:nth-child(1) .image-circle {
+        width: 220px;
+        height: 220px;
+    }
+
+    .circle-container:nth-child(2) .image-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-container:nth-child(3) .image-circle {
+        width: 190px;
+        height: 190px;
+    }
+
+    .circle-container:nth-child(1) .bg-circle,
+    .circle-container:nth-child(2) .bg-circle,
+    .circle-container:nth-child(3) .bg-circle {
+        width: calc(100% + 40px);
+        height: calc(100% + 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    .construccion {
+        padding: 4rem 0;
+    }
+
+    .const-sect1 {
+        height: 500px;
+    }
+
+    .circle-container:nth-child(1) .image-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .circle-container:nth-child(2) .image-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-container:nth-child(3) .image-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .const-sect2 h1 {
+        font-size: 2.5rem;
+    }
+}

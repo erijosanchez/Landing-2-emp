@@ -349,150 +349,301 @@ main {
 
 /*N° Construccion */
 .construccion {
-    padding-top: 6rem;
-    padding-bottom: 32rem;
-    text-align: center;
+    padding: 8rem 0;
     font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+    background-color: #fafafa;
 }
 
 .const-cont {
     display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 0 2rem;
 }
 
 .const-sect1 {
-    flex: 2;
-    padding-top: 1rem;
-    text-align: left;
-    align-items: left;
+    flex: 1.8;
+    position: relative;
+    height: 800px;
 }
 
 .const-sect2 {
     flex: 1;
-    padding: 1rem 0;
+    padding: 4rem 0 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .const-sect2 h1 {
     text-align: left;
-    margin-left: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    color: #939393fa;
-    line-height: 1;
-}
-
-.const-sect2 p {
-    margin-top: 1rem;
-    text-align: left;
-    margin-left: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
+    font-size: 3.5rem;
+    color: #424242;
+    line-height: 1.1;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 
+.const-sect2 p {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    color: #616161;
+}
+
 .btn-const {
-    padding: 0.7rem 3rem;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
+    display: inline-block;
+    padding: 1rem 3.5rem;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
     text-decoration: none;
-    color: #000;
+    color: #333;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    align-self: flex-start;
+    transition: all 0.3s ease;
 }
 
 .btn-const:hover {
-    background: linear-gradient(to bottom, #2980b9, #72b1da);
-    color: #f0f0f0;
-    padding: 0.7rem 3rem;
+    background: linear-gradient(to right, #1e5799, #3498db);
+    color: #fff;
     border: none;
-    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(30, 87, 153, 0.2);
+    transform: translateY(-2px);
 }
 
-.cont-circulo {
-    position: relative;
+/* Floating circle containers - Repositioned for better spacing */
+.circle-container {
+    position: absolute;
+    will-change: transform;
+}
+
+.circle-container:nth-child(1) {
+    left: 5%;
+    top: 8%;
+}
+
+.circle-container:nth-child(2) {
+    left: 55%;
+    top: 15%;
+}
+
+.circle-container:nth-child(3) {
+    left: 20%;
+    top: 55%;
+}
+
+/* Image circles */
+.image-circle {
+    border-radius: 50%;
     overflow: hidden;
-    margin-left: 5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@keyframes float {
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-circle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Background circles - More professional colors */
+.bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Specific sizes and positions - Adjusted for better proportions */
+.circle-container:nth-child(1) .image-circle {
+    width: 320px;
+    height: 320px;
+}
+
+.circle-container:nth-child(1) .bg-circle {
+    width: 380px;
+    height: 380px;
+    background: linear-gradient(to top, #1e5799, #3498db);
+    top: -30px;
+    left: -30px;
+}
+
+.circle-container:nth-child(2) .image-circle {
+    width: 220px;
+    height: 220px;
+}
+
+.circle-container:nth-child(2) .bg-circle {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(to bottom, #1c6bc5, #87b6d2);
+    top: -30px;
+    left: -30px;
+}
+
+.circle-container:nth-child(3) .image-circle {
+    width: 300px;
+    height: 300px;
+}
+
+.circle-container:nth-child(3) .bg-circle {
+    width: 360px;
+    height: 360px;
+    background: linear-gradient(to right, #1e5799, #59a2d2);
+    top: -30px;
+    left: -30px;
+}
+
+/* Different floating animations for each circle - Slowed down for more professional look */
+@keyframes float1 {
     0% {
-        transform: translateY(0);
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(8px, -12px) rotate(0.5deg);
     }
 
     50% {
-        transform: translateY(-30px);
+        transform: translate(15px, 0px) rotate(1deg);
     }
 
-    /* Se mueve hacia arriba */
+    75% {
+        transform: translate(8px, 12px) rotate(0.5deg);
+    }
+
     100% {
-        transform: translateY(0);
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
     }
 
+    30% {
+        transform: translate(-10px, 10px) rotate(-0.5deg);
+    }
+
+    60% {
+        transform: translate(-15px, -6px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
 }
 
-.cont-circulo-2 {
-    position: relative;
-    overflow: hidden;
-    margin-left: 30rem;
+@keyframes float3 {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(12px, 8px) rotate(0.8deg);
+    }
+
+    66% {
+        transform: translate(-8px, -12px) rotate(-0.5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
 }
 
-.cont-circulo-3 {
-    position: relative;
-    overflow: hidden;
-    top: 18rem;
+@keyframes floatBg1 {
+    0% {
+        transform: translate(3px, 3px);
+    }
+
+    50% {
+        transform: translate(-6px, -6px);
+    }
+
+    100% {
+        transform: translate(3px, 3px);
+    }
 }
 
-.cont-circulo img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    z-index: 9;
+@keyframes floatBg2 {
+    0% {
+        transform: translate(-5px, 0);
+    }
+
+    50% {
+        transform: translate(5px, -7px);
+    }
+
+    100% {
+        transform: translate(-5px, 0);
+    }
+}
+
+@keyframes floatBg3 {
+    0% {
+        transform: translate(0, -7px);
+    }
+
+    50% {
+        transform: translate(-4px, 7px);
+    }
+
+    100% {
+        transform: translate(0, -7px);
+    }
+}
+
+/* Apply animations - Slower animations for more subtle, professional effect */
+.circle-container:nth-child(1) {
+    animation: float1 18s ease-in-out infinite;
+}
+
+.circle-container:nth-child(2) {
+    animation: float2 22s ease-in-out infinite;
+}
+
+.circle-container:nth-child(3) {
+    animation: float3 25s ease-in-out infinite;
+}
+
+.circle-container:nth-child(1) .bg-circle {
+    animation: floatBg1 12s ease-in-out infinite;
+}
+
+.circle-container:nth-child(2) .bg-circle {
+    animation: floatBg2 14s ease-in-out infinite;
+}
+
+.circle-container:nth-child(3) .bg-circle {
+    animation: floatBg3 16s ease-in-out infinite;
+}
+
+/* Adding a subtle parallax background element for depth */
+.construccion::before {
+    content: '';
     position: absolute;
-    left: 3.5rem;
-    top: 1rem;
-    animation: float 3.5s ease-in-out infinite alternate;
-}
-
-.cont-circulo .circulo-1 {
-    padding: 13rem;
-    border-radius: 50%;
-    background: rgb(219, 219, 6);
-    position: absolute;
-    z-index: 1;
-    animation: float 3.7s ease-in-out infinite alternate;
-}
-
-.cont-circulo-2 img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 5;
-    animation: float 3.4s ease-in-out infinite alternate;
-}
-
-.cont-circulo-2 .circulo-2 {
-    background: violet;
-    padding: 8rem;
-    position: absolute;
-    border-radius: 50%;
-    top: -3rem;
-    left: -0.5rem;
-    animation: float 3.5s ease-in-out infinite alternate;
-}
-
-.cont-circulo-3 img {
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    position: absolute;
-    z-index: 5;
-    animation: float 3.3s ease-in-out infinite alternate;
-}
-
-.cont-circulo-3 .circulo-3 {
-    position: absolute;
-    padding: 14rem;
-    border-radius: 50%;
-    background: turquoise;
-    animation: float 3.5s ease-in-out infinite alternate;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom right, rgba(240, 240, 240, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+    z-index: 0;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>> PROYECTOS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -794,7 +945,7 @@ main {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #1e5799, #3498db);
     color: white;
     display: flex;
     padding: 2rem;
