@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener todos los enlaces de navegación
     const navLinks = document.querySelectorAll('nav ul li a');
+    // Variable para almacenar todas las secciones
+    let sections = [];
     
     // Función para actualizar el estado activo
     function setActiveLink() {
@@ -45,6 +47,84 @@ document.addEventListener('DOMContentLoaded', function() {
                     (currentPath === '/' && href === '/index.html')) {
                     link.classList.add('active');
                 }
+            }
+        });
+    }
+    
+    // Función para inicializar las secciones para detección de scroll
+    function initSections() {
+        sections = [];
+        // Recopilamos todas las secciones referenciadas por los enlaces de navegación
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href.startsWith('#')) {
+                const section = document.querySelector(href);
+                if (section) {
+                    sections.push({
+                        id: href,
+                        element: section,
+                        link: link
+                    });
+                }
+            } else if (href.includes('#') && !href.startsWith('#')) {
+                const parts = href.split('#');
+                const linkHash = '#' + parts[1];
+                if (window.location.pathname.endsWith(parts[0]) || 
+                    (window.location.pathname === '/' && parts[0] === '/index.html')) {
+                    const section = document.querySelector(linkHash);
+                    if (section) {
+                        sections.push({
+                            id: linkHash,
+                            element: section,
+                            link: link
+                        });
+                    }
+                }
+            }
+        });
+    }
+    
+    // Función para actualizar el menú al hacer scroll
+    function handleScroll() {
+        // Si no estamos en la página principal, no hacemos nada
+        if (!window.location.pathname.endsWith('index.html') && 
+            window.location.pathname !== '/' && 
+            window.location.pathname.length !== 0) {
+            return;
+        }
+        
+        // Obtenemos la posición actual del scroll con un pequeño offset
+        const scrollPosition = window.scrollY + 100; // 100px de offset para mejorar la detección
+        
+        // Encontramos la sección visible actual
+        let currentSection = null;
+        
+        for (let i = 0; i < sections.length; i++) {
+            const section = sections[i].element;
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            
+            // Si el scroll está dentro de esta sección
+            if (scrollPosition >= sectionTop && 
+                scrollPosition < sectionTop + sectionHeight) {
+                currentSection = sections[i].id;
+                break;
+            }
+        }
+        
+        // Si estamos al final de la página, seleccionamos la última sección
+        if (!currentSection && window.innerHeight + scrollPosition >= document.body.offsetHeight - 5) {
+            currentSection = sections[sections.length - 1].id;
+        }
+        
+        // Actualizamos las clases active en los enlaces
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === currentSection || 
+                link.getAttribute('href').endsWith(currentSection)) {
+                link.classList.add('active');
+                // Actualizamos la URL sin causar recarga (opcional)
+                history.replaceState(null, null, currentSection);
             }
         });
     }
@@ -113,9 +193,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
     
+    // Inicializar las secciones para detección de scroll
+    initSections();
+    
     // Establecer el enlace activo al cargar la página
     setActiveLink();
     
     // Actualizar cuando cambia el hash (navegación interna)
     window.addEventListener('hashchange', setActiveLink);
+    
+    // Añadir el evento de scroll para detectar la sección actual
+    window.addEventListener('scroll', handleScroll);
+    
+    // Ejecutar una vez para establecer la sección inicial
+    handleScroll();
 });
