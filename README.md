@@ -21,3 +21,18 @@ Para visualizar y editar este proyecto en tu máquina local, sigue estos pasos:
 
    ```bash
    git clone https://github.com/erijosanchez/Landing-2-emp.git
+
+2. **Navega al directorio del proyecto:**:
+
+   ```bash
+   cd Landing-2-emp
+
+1. **Abre el archivo index.html en tu navegador preferido para visualizar la landing page.**:
+
+## Uso
+Esta landing page está estructurada en varias secciones clave:
+
+- Inicio: Presenta una introducción atractiva a nuestros servicios.
+- Servicios: Detalla las soluciones de desarrollo web que ofrecemos.
+- Portafolio: Muestra proyectos anteriores y casos de éxito.
+- Contacto: Proporciona un formulario para que los clientes potenciales puedan comunicarse con nosotros.
