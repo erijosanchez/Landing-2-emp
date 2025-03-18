@@ -155,11 +155,47 @@
     .const-sect2 h1 {
         font-size: 2.5rem;
     }
+
+    .section-header-2 h2 {
+        font-size: 2rem;
+    }
+
+    .proyecto-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .proyecto-detalles {
+        flex-direction: column;
+    }
+
+    .proyecto-detalles li {
+        margin-bottom: 0.5rem;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 @media (min-width: 769px) {
     .mobile-menu-toggle {
         display: none;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .terraza,
+    .piso-1,
+    .piso-2,
+    .piso-3,
+    .planta-baja {
+        width: 95%;
+    }
+
+    .proyecto-contenido {
+        flex-direction: column;
+    }
+
+    .proyecto-accion {
+        padding-left: 0;
+        margin-top: 1.5rem;
     }
 }
