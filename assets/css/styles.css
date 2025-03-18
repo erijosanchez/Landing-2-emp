@@ -903,9 +903,9 @@ main {
 
 .section-title {
     font-size: 42px;
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 15px;
-    color: #1A1A1A;
+    color: #343434;
     letter-spacing: 1px;
     position: relative;
     display: inline-block;
@@ -916,7 +916,7 @@ main {
     position: absolute;
     width: 50px;
     height: 3px;
-    background-color: #C39A6B;
+    background: linear-gradient(to right, #1e5799, #3498db);
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -1083,7 +1083,7 @@ main {
 }
 
 .btn-primary {
-    background-color: #C39A6B;
+    background: linear-gradient(to right, #1e5799, #3498db);
     color: white;
     border: 2px solid #C39A6B;
 }
