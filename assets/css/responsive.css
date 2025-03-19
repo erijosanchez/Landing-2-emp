@@ -171,6 +171,15 @@
     .proyecto-detalles li {
         margin-bottom: 0.5rem;
     }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -197,5 +206,46 @@
     .proyecto-accion {
         padding-left: 0;
         margin-top: 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .grid.reverse {
+        direction: ltr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .about-text h3,
+    .values-section h3,
+    .commitment-section h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
     }
 }
