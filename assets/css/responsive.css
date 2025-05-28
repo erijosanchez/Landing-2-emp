@@ -11,6 +11,7 @@
     .circle-container:nth-child(3) {
         left: 15%;
     }
+
 }
 
 @media (max-width: 1200px) {
@@ -78,6 +79,9 @@
         width: calc(100% + 40px);
         height: calc(100% + 40px);
     }
+
+    /*Header*/
+    
 }
 
 
