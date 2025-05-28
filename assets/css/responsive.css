@@ -81,7 +81,36 @@
     }
 
     /*Header*/
-    
+
+    /*Slider contenedor principal*/
+
+    .hero {
+        padding-top: 3rem;
+        height: 95vh;
+        width: 100vh;
+    }
+
+    .hero-content {
+        max-width: 100vh;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+    }
+
+    .hero-content-2 {
+        max-width: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-align: center;
+        color: #477fa4;
+        letter-spacing: -2px;
+        line-height: 1.2;
+    }
+
 }
 
 
@@ -184,6 +213,30 @@
         flex-direction: column;
         gap: 0;
     }
+
+    .hero h1 {
+        font-size: 2rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-align: left;
+        color: #477fa4;
+        letter-spacing: -2px;
+        line-height: 1.2;
+    }
+
+    .hero h3 {
+        font-weight: 400;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 4px;
+        padding-bottom: 1rem;
+        color: #2c3e50;
+        font-size: 0.8rem;
+    }
+
+
+    /**Sección de servicios**/
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -191,6 +244,8 @@
     .mobile-menu-toggle {
         display: none;
     }
+
+
 }
 
 @media (max-width: 992px) {
