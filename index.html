@@ -3,95 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing-2-Emp - Duck Dev</title>
+    <title>ArquitecturaPro - Transformando Visiones en Espacios Extraordinarios</title>
     <!--Font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!--Styles-->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- FAVICON .webp-->
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
-    <!-- Metadatos -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <!-- CEO -->
+    <meta name="description"
+        content="Estudio de arquitectura profesional especializado en diseño arquitectónico, construcción y remodelaciones. Transformamos sus ideas en proyectos extraordinarios.">
+    <meta name="keywords"
+        content="arquitectura, construcción, diseño, remodelaciones, arquitecto, proyectos arquitectónicos">
+    <meta name="author" content="ArquitecturaPro">
 
 </head>
 
 <body>
     <!-- BARRA DE NAVEGACION -->
-    <header>
-        <div class="logo">
-            <img src="img/logo/duckDevlogo.png" alt="Landing-2-emp logo">
+    <header id="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo/duckDevlogo.png" alt="ArquitecturaPro logo">
+            </div>
+            <nav id="nav">
+                <ul id="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#construction">Construimos</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html#inicio">Inicio</a></li>
-                <li><a href="/index.html#servicios">Servicios</a></li>
-                <li><a href="/index.html#construction">Construimos</a></li>
-                <li><a href="/index.html#proyectos">Proyectos</a></li>
-                <li><a href="/index.html#nosotros">Nosotros</a></li>
-                <li><a href="/conacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <!-- END BARRA DE NAVEGACION -->
 
     <main>
         <!-- SECCION DE INICIO O HERO -->
         <section id="inicio" class="hero">
-            <div class="hero-content">
-                <h3>DISEÑANDO UN FUTURO RESISTENTE</h3>
-                <h1>Transformando Visiones en Espacios Extraordinarios</h1>
-                <p>Vitae congue mauris rhoncus aenean vel elit scelerisque. Consequat nisl vel pretium lectus quam id
-                    leo in vitae. Dictum sit amet justo donec enim diam vulputate. Sociis natoque penatibus et magnis
-                    dis parturient</p>
-                <a href="#contacto" class="cta-button">Contáctanos</a>
-            </div>
-            <div class="hero-content-2">
-                <div class="cont-img">
-                    <img src="img/contenido/arqui-img1.webp" alt="arquitecto">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h3>DISEÑANDO UN FUTURO RESISTENTE</h3>
+                    <h1>Transformando Visiones en Espacios Extraordinarios</h1>
+                    <p>Creamos arquitectura que trasciende el tiempo, fusionando innovación, funcionalidad y belleza
+                        para dar vida a espacios que inspiran y perduran.</p>
+                    <a href="#contacto" class="cta-button">
+                        <i class="fas fa-arrow-right"></i>
+                        Contáctanos
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/contenido/arqui-img1.webp" alt="Arquitecto trabajando en proyecto">
                 </div>
             </div>
         </section>
+
         <!-- END HERO SECTION -->
 
         <!-- SERVICES SECTION -->
         <section id="servicios" class="services">
-            <div class="section-header-1">
-                <h2>Arquitectura & Construcción</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img-cont">
-                        <img src="img/contenido/service-1.jpg" alt="Servicio 1">
-                    </div>
-                    <h3>Diseño Arquitectónico</h3>
-                    <p>Conceptualización y desarrollo de proyectos únicos</p>
-                    <a class="btn-serv" href="#"> Ver Más </a>
+            <div class="services-container">
+                <div class="section-header fade-in">
+                    <h2>Arquitectura & Construcción</h2>
+                    <p>Servicios integrales para materializar sus proyectos</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-img-cont">
-                        <img src="img/contenido/construccion.webp" alt="Servicio 2">
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-img-cont">
+                            <img src="img/contenido/service-1.jpg" alt="Diseño Arquitectónico">
+                        </div>
+                        <h3>Diseño Arquitectónico</h3>
+                        <p>Conceptualización y desarrollo de proyectos únicos que reflejan su visión y necesidades
+                            específicas.</p>
+                        <a class="btn-serv" href="#">Ver Más</a>
                     </div>
-                    <h3>Construcción</h3>
-                    <p>Ejecución precisa de proyectos de alta complejidad</p>
-                    <a class="btn-serv" href="#"> Ver Más </a>
-                </div>
-                <div class="service-card">
-                    <div class="service-img-cont">
-                        <img src="img/contenido/remodelacion.webp" alt="Servicio 3">
+                    <div class="service-card fade-in">
+                        <div class="service-img-cont">
+                            <img src="img/contenido/construccion.webp" alt="Construcción">
+                        </div>
+                        <h3>Construcción</h3>
+                        <p>Ejecución precisa de proyectos de alta complejidad con los más altos estándares de calidad.
+                        </p>
+                        <a class="btn-serv" href="#">Ver Más</a>
                     </div>
-                    <h3>Remodelaciones</h3>
-                    <p>Transformación integral de espacios existentes</p>
-                    <a class="btn-serv" href="#"> Ver Más </a>
-                </div>
-                <div class="service-card">
-                    <div class="service-img-cont">
-                        <img src="img/contenido/remo-2.jpg" alt="Servicio 4">
+                    <div class="service-card fade-in">
+                        <div class="service-img-cont">
+                            <img src="img/contenido/remodelacion.webp" alt="Remodelaciones">
+                        </div>
+                        <h3>Remodelaciones</h3>
+                        <p>Transformación integral de espacios existentes para optimizar funcionalidad y estética.</p>
+                        <a class="btn-serv" href="#">Ver Más</a>
                     </div>
-                    <h3>Remodelaciones</h3>
-                    <p>Transformación integral de espacios existentes</p>
-                    <a class="btn-serv" href="#"> Ver Más </a>
+                    <div class="service-card fade-in">
+                        <div class="service-img-cont">
+                            <img src="img/contenido/remo-2.jpg" alt="Interiorismo">
+                        </div>
+                        <h3>Interiorismo</h3>
+                        <p>Diseño de interiores que armonizan estilo, confort y funcionalidad en cada ambiente.</p>
+                        <a class="btn-serv" href="#">Ver Más</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -100,39 +121,38 @@
         <!-- SECCION DE CONSTRUIMOS -->
         <section id="construction" class="construccion">
             <div class="const-cont">
-                <div class="const-sect1">
-                    <!-- First circle -->
+                <div class="const-sect1 fade-in">
                     <div class="circle-container">
                         <div class="image-circle">
-                            <img src="img/contenido/fondo-1.webp" alt="Modern building architecture">
+                            <img src="img/contenido/fondo-1.webp" alt="Arquitectura moderna">
                         </div>
                         <div class="bg-circle"></div>
                     </div>
-
-                    <!-- Second circle -->
                     <div class="circle-container">
                         <div class="image-circle">
-                            <img src="img/contenido/construccion.webp" alt="Construction workers">
+                            <img src="img/contenido/construccion.webp" alt="Trabajadores en construcción">
                         </div>
                         <div class="bg-circle"></div>
                     </div>
-
-                    <!-- Third circle -->
                     <div class="circle-container">
                         <div class="image-circle">
-                            <img src="img/contenido/service-1.jpg" alt="Construction helmet and plans">
+                            <img src="img/contenido/service-1.jpg" alt="Planos y casco">
                         </div>
                         <div class="bg-circle"></div>
                     </div>
                 </div>
 
-                <div class="const-sect2">
-                    <h1>Construimos sobre una base solida</h1>
-                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
-                    <a class="btn-const" href="#">Saber más</a>
+                <div class="const-sect2 fade-in">
+                    <h1>Construimos sobre una base sólida</h1>
+                    <p>Nuestro compromiso con la excelencia se refleja en cada proyecto. Utilizamos materiales de
+                        primera calidad, tecnología avanzada y un equipo de profesionales experimentados para garantizar
+                        resultados que superen sus expectativas. Cada estructura que construimos está diseñada para
+                        perdurar en el tiempo.
+                    </p>
+                    <a href="#proyectos" class="btn-const">
+                        <i class="fas fa-building"></i>
+                        Ver Proyectos
+                    </a>
                 </div>
             </div>
         </section>
@@ -140,116 +160,95 @@
 
         <!-- SECTION DE PROYECTOS -->
         <section id="proyectos" class="projects">
-            <div class="container">
-                <div class="section-header-2">
+            <div class="projects-container">
+                <div class="section-header fade-in">
                     <h2>Proyectos Destacados</h2>
-                    <p class="section-description">Construcciones que transforman espacios en experiencias</p>
+                    <p>Portfolio de nuestros trabajos más representativos</p>
                 </div>
-            </div>
 
-            <div class="contenedor-proyectos">
-                <div class="edificio-container">
-                    <!-- Piso superior (Terraza) -->
-                    <div class="piso terraza">
+                <div class="edificio-container fade-in">
+                    <div class="piso">
                         <div class="proyecto-contenido">
-                            <div class="proyecto-info">
-                                <span class="proyecto-categoria">Residencial Premium</span>
-                                <h3>Skyview Tower</h3>
-                                <p>Complejo residencial con certificación energética A+ que integra tecnologías
-                                    sostenibles y espacios comunitarios en altura.</p>
+                            <div>
+                                <span class="proyecto-categoria">Residencial</span>
+                                <h3>Casa Moderna Minimalista</h3>
+                                <p>Diseño arquitectónico de vanguardia que combina líneas limpias con espacios
+                                    funcionales.</p>
                                 <ul class="proyecto-detalles">
-                                    <li>Superficie: 12.500 m²</li>
-                                    <li>Año: 2023</li>
-                                    <li>Ubicación: Zona Norte</li>
+                                    <li>• 350 m²</li>
+                                    <li>• 3 Dormitorios</li>
+                                    <li>• Piscina</li>
+                                    <li>• Jardín</li>
                                 </ul>
                             </div>
-                            <div class="proyecto-accion">
-                                <a href="#" class="btn-proyecto">Ver proyecto <span class="flecha">→</span></a>
-                            </div>
+                            <a href="#" class="btn-proyecto">
+                                Ver Detalles <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Pisos del edificio -->
-                    <div class="piso piso-1">
+                    <div class="piso">
                         <div class="proyecto-contenido">
-                            <div class="proyecto-info">
-                                <span class="proyecto-categoria">Oficinas Corporativas</span>
-                                <h3>Tech Hub Center</h3>
-                                <p>Sede central con espacios de trabajo flexibles que promueven la colaboración y la
-                                    innovación mientras optimizan recursos energéticos.</p>
-                                <ul class="proyecto-detalles">
-                                    <li>Superficie: 8.200 m²</li>
-                                    <li>Año: 2022</li>
-                                    <li>Ubicación: Distrito Financiero</li>
-                                </ul>
-                            </div>
-                            <div class="proyecto-accion">
-                                <a href="#" class="btn-proyecto">Ver proyecto <span class="flecha">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="piso piso-2">
-                        <div class="proyecto-contenido">
-                            <div class="proyecto-info">
+                            <div>
                                 <span class="proyecto-categoria">Comercial</span>
-                                <h3>Nexus Mall</h3>
-                                <p>Centro comercial que integra espacios de retail, ocio y restauración con un diseño
-                                    que maximiza la luz natural y la eficiencia operativa.</p>
+                                <h3>Centro Comercial Plaza Norte</h3>
+                                <p>Complejo comercial de gran escala con diseño sustentable y espacios multifuncionales.
+                                </p>
                                 <ul class="proyecto-detalles">
-                                    <li>Superficie: 15.800 m²</li>
-                                    <li>Año: 2023</li>
-                                    <li>Ubicación: Zona Metropolitana</li>
+                                    <li>• 15,000 m²</li>
+                                    <li>• 120 Locales</li>
+                                    <li>• Cine</li>
+                                    <li>• Food Court</li>
                                 </ul>
                             </div>
-                            <div class="proyecto-accion">
-                                <a href="#" class="btn-proyecto">Ver proyecto <span class="flecha">→</span></a>
-                            </div>
+                            <a href="#" class="btn-proyecto">
+                                Ver Detalles <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="piso piso-3">
+                    <div class="piso">
                         <div class="proyecto-contenido">
-                            <div class="proyecto-info">
-                                <span class="proyecto-categoria">Cultural</span>
-                                <h3>Centro de Artes Urbanas</h3>
-                                <p>Rehabilitación de antigua fábrica transformada en espacio multidisciplinar para
-                                    actividades culturales y formativas.</p>
-                                <ul class="proyecto-detalles">
-                                    <li>Superficie: 6.400 m²</li>
-                                    <li>Año: 2021</li>
-                                    <li>Ubicación: Distrito Histórico</li>
-                                </ul>
-                            </div>
-                            <div class="proyecto-accion">
-                                <a href="#" class="btn-proyecto">Ver proyecto <span class="flecha">→</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Base del edificio -->
-                    <div class="piso planta-baja">
-                        <div class="proyecto-contenido">
-                            <div class="proyecto-info">
+                            <div>
                                 <span class="proyecto-categoria">Educativo</span>
-                                <h3>Biblioteca Municipal Central</h3>
-                                <p>Equipamiento público con espacios para investigación, lectura y formación que combina
-                                    funcionalidad, accesibilidad y diseño bioclimático.</p>
+                                <h3>Instituto Tecnológico</h3>
+                                <p>Campus educativo moderno con aulas inteligentes y laboratorios de última generación.
+                                </p>
                                 <ul class="proyecto-detalles">
-                                    <li>Superficie: 4.200 m²</li>
-                                    <li>Año: 2022</li>
-                                    <li>Ubicación: Centro Urbano</li>
+                                    <li>• 8,500 m²</li>
+                                    <li>• 40 Aulas</li>
+                                    <li>• Laboratorios</li>
+                                    <li>• Auditorio</li>
                                 </ul>
                             </div>
-                            <div class="proyecto-accion">
-                                <a href="#" class="btn-proyecto">Ver proyecto <span class="flecha">→</span></a>
-                            </div>
+                            <a href="#" class="btn-proyecto">
+                                Ver Detalles <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="ver-todos-container">
-                        <a href="/proyectos.html" class="btn-ver-todos">Ver todos los proyectos</a>
+                    <div class="piso">
+                        <div class="proyecto-contenido">
+                            <div>
+                                <span class="proyecto-categoria">Oficinas</span>
+                                <h3>Torre Corporativa Central</h3>
+                                <p>Edificio inteligente de oficinas con certificación LEED y tecnología de punta.</p>
+                                <ul class="proyecto-detalles">
+                                    <li>• 22 Pisos</li>
+                                    <li>• 12,000 m²</li>
+                                    <li>• Helipuerto</li>
+                                    <li>• Gym</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-proyecto">
+                                Ver Detalles <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="ver-todos-container fade-in">
+                    <a href="#" class="btn-ver-todos">Ver Todos los Proyectos</a>
                 </div>
             </div>
         </section>
@@ -257,117 +256,222 @@
 
         <!-- SECTION NOSOTROS -->
         <section id="nosotros" class="about-section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Nosotros</h2>
-                    <p class="section-subtitle">Fusionamos visión arquitectónica y excelencia constructiva para
-                        transformar espacios en experiencias memorables.</p>
-                </div>
-
-                <div class="about-content grid">
+            <div class="about-container">
+                <div class="about-content fade-in">
                     <div class="about-text">
-                        <h3>Nuestra Filosofía</h3>
-                        <p>Creemos que la arquitectura trasciende la mera construcción. Cada proyecto es una oportunidad
-                            para crear un diálogo entre el espacio, la luz y las personas que lo habitan. Nuestra
-                            metodología combina innovación técnica con sensibilidad estética, respetando siempre el
-                            contexto urbano y ambiental.</p>
+                        <h3>Nuestra Experiencia</h3>
+                        <p>Con más de 15 años en el sector, hemos consolidado nuestra posición como líderes en
+                            arquitectura y construcción. Nuestro equipo multidisciplinario trabaja con pasión y
+                            dedicación para crear espacios que no solo cumplan con los requisitos funcionales, sino que
+                            también aporten valor estético y emocional a quienes los habitan.</p>
                     </div>
-                    <div class="about-images">
-                        <div class="image-container">
-                            <img src="img/contenido/arqui-img1.webp" alt="Diseño arquitectónico conceptual">
-                        </div>
+                    <div class="image-container">
+                        <img src="img/contenido/about-1.jpg" alt="Equipo de arquitectos">
                     </div>
                 </div>
 
-                <div class="about-content grid reverse">
+                <div class="about-content reverse fade-in">
                     <div class="about-text">
-                        <h3>Equipo</h3>
-                        <p>Nuestro equipo multidisciplinario reúne arquitectos, ingenieros y especialistas en
-                            construcción con amplia experiencia en proyectos residenciales, comerciales e
-                            institucionales. Esta diversidad de conocimientos nos permite abordar cada desafío desde
-                            múltiples perspectivas, garantizando soluciones integrales y sofisticadas.</p>
+                        <h3>Innovación y Tecnología</h3>
+                        <p>Incorporamos las últimas tendencias en tecnología BIM, renderizado 3D y realidad virtual para
+                            ofrecer a nuestros clientes una experiencia completa desde la conceptualización hasta la
+                            entrega final. Creemos que la innovación es clave para crear espacios verdaderamente
+                            extraordinarios.</p>
                     </div>
-                    <div class="about-images">
-                        <div class="image-container">
-                            <img src="img/contenido/construccion.webp" alt="Equipo de arquitectos colaborando">
-                        </div>
+                    <div class="image-container">
+                        <img src="img/contenido/tech-arch.jpg" alt="Tecnología en arquitectura">
                     </div>
                 </div>
 
-                <div class="about-content grid">
-                    <div class="about-text">
-                        <h3>Trayectoria</h3>
-                        <p>Con más de 20 años de experiencia en el sector, hemos desarrollado proyectos emblemáticos que
-                            definen el paisaje urbano contemporáneo. Nuestro compromiso con la excelencia ha sido
-                            reconocido con premios nacionales e internacionales, consolidando nuestra posición como
-                            referentes en la industria.</p>
-                    </div>
-                    <div class="about-images">
-                        <div class="image-container">
-                            <img src="img/contenido/fondo-1.webp" alt="Proyecto arquitectónico premiado">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="values-section">
-                    <h3 class="text-center">Nuestros Valores</h3>
+                <div class="values-section fade-in">
+                    <h3>Nuestros Valores</h3>
                     <div class="values-grid">
                         <div class="value-item">
                             <div class="value-icon">
-                                <i class="icon-precision"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <h4>Precisión</h4>
-                            <p>Cada detalle cuenta en la materialización de un proyecto excepcional.</p>
+                            <h4>Excelencia</h4>
+                            <p>Buscamos la perfección en cada detalle, desde el diseño inicial hasta la entrega final
+                                del proyecto.</p>
                         </div>
                         <div class="value-item">
                             <div class="value-icon">
-                                <i class="icon-innovation"></i>
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Compromiso</h4>
+                            <p>Nos comprometemos con nuestros clientes a entregar proyectos que superen sus
+                                expectativas.</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
                             </div>
                             <h4>Innovación</h4>
-                            <p>Exploramos constantemente nuevas tecnologías y métodos constructivos.</p>
+                            <p>Incorporamos las últimas tendencias y tecnologías para crear espacios únicos y
+                                funcionales.</p>
                         </div>
                         <div class="value-item">
                             <div class="value-icon">
-                                <i class="icon-sustainability"></i>
+                                <i class="fas fa-leaf"></i>
                             </div>
                             <h4>Sostenibilidad</h4>
-                            <p>Diseñamos pensando en el futuro, minimizando el impacto ambiental.</p>
-                        </div>
-                        <div class="value-item">
-                            <div class="value-icon">
-                                <i class="icon-collaboration"></i>
-                            </div>
-                            <h4>Colaboración</h4>
-                            <p>Trabajamos en estrecha comunicación con nuestros clientes, convirtiendo sus ideas en
-                                realidades tangibles.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="commitment-section">
-                    <div class="container narrow">
-                        <h3 class="text-center">Nuestro Compromiso</h3>
-                        <p class="text-center">Más allá de cumplir plazos y presupuestos, nos comprometemos a superar
-                            expectativas. Cada proyecto es único y recibe nuestra dedicación total, desde el concepto
-                            inicial hasta el último detalle constructivo.</p>
-                        <div class="cta-container text-center">
-                            <a href="#contacto" class="btn btn-primary">Contacta con nosotros</a>
+                            <p>Desarrollamos proyectos respetuosos con el medio ambiente y energéticamente eficientes.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- END SECTION NOSOTROS -->
     </main>
+    <!-- END SECTION NOSOTROS -->
 
     <footer>
         <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
-        <p> 2023 ArquitecturaPro. &#169;Todos los derechos reservados.</p>
+        <p>&copy; 2024 ArquitecturaPro. Todos los derechos reservados.</p>
+        <p>Transformando visiones en realidades arquitectónicas</p>
     </footer>
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenu.addEventListener('click', function () {
+            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with fade-in class
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', function () {
+                navMenu.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Add loading animation
+        window.addEventListener('load', function () {
+            document.body.style.opacity = '1';
+        });
+
+        // Service cards hover effect
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Projects hover effect
+        document.querySelectorAll('.piso').forEach(piso => {
+            piso.addEventListener('mouseenter', function () {
+                this.style.transform = 'translateX(15px) scale(1.02)';
+            });
+
+            piso.addEventListener('mouseleave', function () {
+                this.style.transform = 'translateX(0) scale(1)';
+            });
+        });
+
+        // Add dynamic background to hero section
+        const hero = document.querySelector('.hero');
+        let mouseX = 0;
+        let mouseY = 0;
+
+        hero.addEventListener('mousemove', function (e) {
+            mouseX = (e.clientX / window.innerWidth) * 100;
+            mouseY = (e.clientY / window.innerHeight) * 100;
+
+            this.style.background = `linear-gradient(${mouseX}deg, #667eea 0%, #764ba2 100%)`;
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function () {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-image');
+            if (parallax) {
+                const speed = scrolled * 0.3;
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Counter animation for statistics (if needed)
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                element.textContent = Math.floor(current);
+                if (current >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                }
+            }, 20);
+        }
+
+        // Initialize animations when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add entrance animations
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 200);
+        });
+    </script>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/app.js"></script>
