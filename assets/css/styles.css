@@ -313,7 +313,9 @@ nav a:hover::after {
 /* Construction Section */
 .construccion {
     padding: 5rem 0;
-    background: var(--white);
+    background-image: url('/img/contenido/fondo-1.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .const-cont {
@@ -637,7 +639,7 @@ nav a:hover::after {
 
 /* Footer */
 footer {
-    background: var(--primary-color);
+    background: var(--gradient-primary);
     color: white;
     text-align: center;
     padding: 3rem 0;
@@ -664,7 +666,7 @@ footer {
 }
 
 .social-links a:hover {
-    background: var(--secondary-color);
+    background: var(--gradient-secondary);
     transform: translateY(-2px);
 }
 
