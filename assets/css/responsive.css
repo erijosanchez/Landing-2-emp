@@ -23,11 +23,21 @@
     .hero-container {
         grid-template-columns: 1fr;
         gap: 2rem;
+        top: 3rem;
         text-align: center;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-content h3 {
+        margin-bottom: 2rem;
+    }
+
+
+    .hero-image img {
+        display: none;
     }
 
     .const-cont {
